@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background-color: white;
+}
+
+// trick to correctly place footer
+// height is a footer height
+body::after {
+    content: '';
+    display: block;
+    height: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a {
+    text-shadow: 0 0 10px white;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
