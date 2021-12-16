@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom';
 import styles from './styles/Header.module.scss';
+import { BsCart4 } from 'react-icons/bs';
 
 const Header = () => {
     return (
         <div className={styles.Header}>
-            <h1>Shop App</h1>
+            <h1>
+                <a href="/">Shop App</a>
+            </h1>
             <nav>
                 <ul>
                     <Link to="/">
@@ -14,7 +17,9 @@ const Header = () => {
                         <li>Shop</li>
                     </Link>
                     <Link to="/cart">
-                        <li>Cart</li>
+                        <li>
+                            <BsCart4 className={styles.cart} />
+                        </li>
                     </Link>
                 </ul>
             </nav>

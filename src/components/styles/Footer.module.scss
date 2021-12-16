@@ -1,9 +1,11 @@
+@use '../../global_styles/color';
+
 .Footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    height: 100px;
+    background-color: color.$primary;
+    height: 50px;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -17,6 +19,6 @@
     }
 
     a:hover {
-        text-shadow: 0 0 10px rgb(0, 140, 255);
+        text-shadow: 0 0 10px color.$secondary;
     }
 }

@@ -1,8 +1,10 @@
+@use '../../global_styles/color';
+
 .Header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: color.$primary;
     color: white;
     box-shadow: 0 0 30px rgb(0, 0, 0, 0.7);
     border-radius: 0 0 5px 5px;
@@ -22,5 +24,18 @@
     ul li {
         display: inline-block;
         margin: 20px;
+    }
+
+    li:hover {
+        text-shadow: 0 0 10px rgb(0, 140, 255);
+    }
+
+    .cart {
+        font-size: 2rem;
+        transition-duration: 0.5s;
+    }
+
+    .cart:hover {
+        transform: scale(1.3);
     }
 }
