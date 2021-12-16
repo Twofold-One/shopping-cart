@@ -1,0 +1,26 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 30px rgb(0, 0, 0, 0.7);
+    border-radius: 0 0 5px 5px;
+
+    h1 {
+        padding: 20px;
+    }
+
+    nav {
+        padding: 20px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    ul li {
+        display: inline-block;
+        margin: 20px;
+    }
+}
