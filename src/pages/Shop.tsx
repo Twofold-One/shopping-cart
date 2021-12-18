@@ -7,7 +7,14 @@ const Shop = () => {
         <div className={styles.Shop}>
             {data.electric.map((item) => {
                 return (
-                    <Card key={item.id} name={item.name} image={item.image} />
+                    <Card
+                        id={item.id}
+                        key={item.id}
+                        name={item.name}
+                        price={item.price}
+                        image={item.image}
+                        description={item.description}
+                    />
                 );
             })}
         </div>

@@ -63,4 +63,52 @@ export const data = {
             Like to play your way? Don't want to be bound to specific genres and techniques? Stop right here. This GB10EM takes influence from one of the world's most respected, most talented guitarists. And it was designed to deliver a huge tonal palette. This is thanks to a powerful duo of Magic Touch-Mini floating humbuckers. Bringing you authentic humbucking nature with the dynamics to please almost any style your mood feels. To play, the Ibanez GB10EM is smooth, sleek, and comfortable. Featuring George's signature compact cutaway body that's perfect for anyone struggling with the standard hollow body sizing. It's time to captivate your audience, and play an instrument stamped with the iconic GB name.`,
         },
     ],
+    bass: [
+        {
+            id: 1,
+            name: 'Fender American Ultra Precision Bass RW',
+            price: 2778,
+            image: 'https://d1aeri3ty3izns.cloudfront.net/media/51/515532/1200/preview.jpg',
+            description: `Ultra precision. Ultra performance. Ultra... everything. Fender have spared no expense in designing and creating the Fender American Ultra Precision Bass. It's an advanced instrument with gleaming, high-grade components and a supreme sound that will stay in your head forever. The pairing of an Ultra Noiseless Vintage Jazz Bass pickup with an Ultra Precision Bass pickup gives it golden voicing. They'll raise your basslines up and give them a bold, powerful, defined tone which glows with warmth and depth.
+            Then there's the sleek, satin urethane-finished maple neck, which feels like a smooth sheet of silk under your fretting hand. It makes for dreamy playability, and means you'll be able to skim along the frets freely. A range of EQ control knobs put the reins of sonic control firmly in your hands, letting you craft, shape, and enhance your tone in an instant. Built for world tours and professional studio sessions, this is far more than just a bass - it's a lifetime companion.`,
+        },
+        {
+            id: 2,
+            name: 'Fender American Pro II Jazz Bass MN',
+            price: 2216,
+            image: 'https://d1aeri3ty3izns.cloudfront.net/media/70/709008/1200/preview.jpg',
+            description: `In order to sound like a pro, you need an instrument of professional standards. The Fender American Pro II Jazz Bass delivers exactly that - and so much more. Packed with a pair of supreme V-Mod II single-coils, Fender have refined their groundbreaking pickup formula to inject more punch, more clarity, and ultimately more attitude into your performance. Because who doesn't seek power in their performance?
+            But, as all experienced musicians know, exceptional sound is nothing without effortless feel. Which is why Fender continue to push the boundaries in their pursuit for pristine playability with the design of this sensational Jazz bass. The classic slim "C" maple neck sports smooth rolled fingerboard edges, a "Super Natural" satin finish, and a unique sculpted neck heel, allowing you to truly get to grips with your instrument. Not to forget its ultra-smooth fretboard surface, ensuring each finger movement is fluid and precise. The clue's in the name - professional. And every aspect of this stunning instrument reaches the heights of elite performance, setting the standard for basses everywhere.`,
+        },
+        {
+            id: 3,
+            name: 'Ibanez SR300EB Bass',
+            price: 369,
+            image: 'https://d1aeri3ty3izns.cloudfront.net/media/58/585369/1200/preview.jpg',
+            description: `The Ibanez SR300EB Bass, Weathered Black is designed for precision and speed, offering aspiring bassists the tools to craft their own playing style while delivering a professional performance. Its mahogany body, 5-piece maple and walnut neck, and jatoba fingerboard saturates the overall tone with beautifully bright, warm characteristics, delivering excellent lows and strong mids for a classic bass thump. Its set of PowerSpan dual coil pickups offer a smooth string response, rich harmonics, and dynamic expressions, while the specialised electronics provide excellent tone shaping. Also fitted with an Accu-cast B120 bridge for a stable performance, the Ibanez SR300EB Bass is the perfect companion for aspiring bassists wanting an instrument that will accommodate their growing skills.`,
+        },
+        {
+            id: 4,
+            name: 'Dean USA John Entwistle Spider',
+            price: 3969,
+            image: 'https://d1aeri3ty3izns.cloudfront.net/media/54/546181/1200/preview.jpg',
+            description: `The Dean USA John Entwistle Spider, Redwood is a limited-edition tribute to The Who's legendary Bassist John ''Thunderfingers'' Entwistle, offering players his iconic spider bass shape with a burled redwood top. Its body is crafted from solid mahogany and coupled with a maple neck and ebony fingerboard, delivering an impressive amount of sustain and tonal warmth, while the deep cutaway and C neck profile ensures players receive an incredibly comfortable playing experience. A set of EMG's Lo Z pickups offer plenty of output and dynamics, while the addition of a special Aphex Exciter circuit offers excellent tone shaping capabilities to expand its low-end. The addition of a Babicz bridge increases the amount of vibration transfer to enhance the overall sustain and resonance, while the Grover tuners improve string stability. Delivered with a durable hardshell case, the Dean USA John Entwistle Spider Redwood Bass is the perfect addition to any fan's collection.`,
+        },
+        {
+            id: 5,
+            name: 'Rickenbacker 4003AC Limited Edition Al Cisneros Bass',
+            price: 3969,
+            image: 'https://d1aeri3ty3izns.cloudfront.net/media/72/720510/1200/preview.jpg',
+            description: `The Rickenbacker 4003AC Limited Edition Al Cisneros Bass takes the mantle of a music legend and injects a shot of low-pitched adrenaline. Containing everything you know about the timeless 4003, this AC special adds some fire to your bass notes thanks to the hot wound treble pickups. These are going to ramp up your output and really kick energy into your rhythm.
+            It sounds distinctive. It looks distinct. Al Cisneros has worked with Rickenbacker to add his touch to the revered 4003, lending its visuals a cutting dynamic but retaining its high-class elegance. Green "Sleep" inlays follow a signed pickguard with striking diamond shaped controls. This bass is going to give you the perfected sound of Rickenbacker, amped up to the max. Don't miss out on this unique twist of an established icon.`,
+        },
+        {
+            id: 6,
+            name: 'Warwick GPS Streamer LX Bass',
+            price: 2778,
+            image: 'https://d1aeri3ty3izns.cloudfront.net/media/43/434561/1200/preview.jpg',
+            description: `Sound and feel. The two attributes you must prioritise when searching for a great bass guitar. To perform at your best and give your music the greatest possible bass sound, you need an instrument with immense playability and fantastic tone. That's exactly what you get in the Warwick GPS Streamer LX Bass. It truly is the pinnacle of performance.
+            Because of its sleek ovangkol neck, you'll be able to fly up and down the bass' scale at speed. Perfect for blistering basslines. You'll enjoy a superb tonal range that can give you any sound you desire. Active MEC P/J pickups give you an amazing, far-reaching array of tones to inject into your music. This is everything you've ever wanted in a bass guitar.`,
+        },
+    ],
 };

@@ -4,4 +4,7 @@
     height: 100%;
     background-color: color.$primary-light;
     color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
 }
