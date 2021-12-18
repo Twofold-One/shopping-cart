@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <div className={styles.Header}>
             <h1>
-                <a href="/">Shop App</a>
+                <a href="/">Guitar Shop</a>
             </h1>
             <nav>
                 <ul>

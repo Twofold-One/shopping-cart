@@ -6,13 +6,10 @@
     align-items: center;
     background-color: color.$primary;
     height: 50px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
     box-shadow: 0 0 30px rgb(0, 0, 0, 0.7);
     color: white;
     border-radius: 5px 5px 0 0;
+    flex-shrink: 0;
 
     a {
         margin: 10px;

@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 *,
 *::before,
 *::after {
@@ -6,25 +8,24 @@
     box-sizing: border-box;
 }
 
-html {
-    min-height: 100%;
+html,
+body,
+.App,
+#root {
+    height: 100%;
+    min-height: 100vh;
 }
 
 body {
-    min-height: 100vh;
-    position: relative;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     line-height: 1.5;
     background-color: white;
 }
 
-// trick to correctly place footer
-// height is a footer height
-body::after {
-    content: '';
-    display: block;
-    height: 50px;
+.App {
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -39,4 +40,8 @@ a {
 img {
     display: block;
     max-width: 100%;
+}
+
+.Main {
+    flex: 1 0 auto;
 }

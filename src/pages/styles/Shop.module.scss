@@ -1,0 +1,7 @@
+@use '../../global_styles/color';
+
+.Shop {
+    height: 100%;
+    background-color: color.$primary-light;
+    color: white;
+}

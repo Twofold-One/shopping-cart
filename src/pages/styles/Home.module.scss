@@ -1,0 +1,39 @@
+@use '../../global_styles/color';
+
+.Home {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+        no-repeat url('../../data/assets/Dimebag.gif');
+    background-size: cover;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        text-align: center;
+        padding: 20px;
+    }
+
+    button {
+        padding: 20px;
+        width: 30vw;
+        font-size: 1.5rem;
+        font-weight: bold;
+        // background-color: color.$secondary-light;
+        background-color: transparent;
+        border-radius: 10px;
+        color: white;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0 20px white;
+            text-shadow: 0 0 10px rgb(0, 140, 255);
+            transform: scale(1.1);
+        }
+        &:active {
+            text-shadow: 0 0 10px white;
+        }
+    }
+}
