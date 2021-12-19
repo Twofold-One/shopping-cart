@@ -1,10 +1,26 @@
 import styles from './styles/Card.module.scss';
 import { CardProps } from '../interfaces/general';
+import React from 'react';
 
-const Card = ({ id, name, price, image, description }: CardProps) => {
+const Card = ({
+    guitarType,
+    id,
+    name,
+    price,
+    image,
+    description,
+    handleAddToCartClick,
+}: CardProps) => {
     // todo
     const onDescriptionClick = () => {
         return <Description />;
+    };
+
+    const onAddToCartClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+        const id = e.currentTarget.id;
+        const guitartype = e.currentTarget.dataset.guitartype;
+        console.log(id, guitartype);
+        handleAddToCartClick(guitartype, id);
     };
 
     return (
@@ -12,7 +28,13 @@ const Card = ({ id, name, price, image, description }: CardProps) => {
             <img src={image} alt="guitar" />
             <h2>{name}</h2>
             <h3>${price}</h3>
-            <button id={String(id)}>ADD TO CART</button>
+            <button
+                id={String(id)}
+                data-guitartype={guitarType}
+                onClick={onAddToCartClick}
+            >
+                ADD TO CART
+            </button>
             <p id={String(id)} onClick={onDescriptionClick}>
                 DESCRIPTION
             </p>

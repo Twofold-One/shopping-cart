@@ -9,6 +9,7 @@
 
     h1 {
         text-shadow: 0 0 10px color.$primary-light;
+        margin-bottom: 40px;
     }
 
     .total {
@@ -24,6 +25,11 @@
             font-weight: bold;
         }
 
+        a {
+            width: 100%;
+            display: flex;
+        }
+
         button {
             width: 100%;
             padding: 20px;
@@ -37,6 +43,10 @@
             &:hover {
                 cursor: pointer;
                 text-shadow: 0 0 10px color.$secondary;
+            }
+
+            &:active {
+                transform: scale(0.9);
             }
         }
     }

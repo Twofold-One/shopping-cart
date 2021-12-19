@@ -6,7 +6,7 @@
         width: 50%;
     }
 
-    div {
+    .info {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -15,12 +15,13 @@
         .quantity {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
+            width: 100%;
 
             button {
                 font-size: 2rem;
-                padding: 20px;
+                padding: 10px;
                 background-color: white;
                 border: none;
 
@@ -33,10 +34,13 @@
                 }
             }
 
-            p {
-                padding: 20px;
+            input {
+                font-size: 1.5rem;
+                padding: 10px;
                 border: 2px solid black;
                 border-radius: 5px;
+                width: 30%;
+                text-align: center;
             }
         }
     }

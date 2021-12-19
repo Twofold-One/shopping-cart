@@ -5,7 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 import { capitalizeFirstLetter } from '../utility_functions/capitalize_first_letter';
 import React from 'react';
 
-const Shop = () => {
+const Shop = ({ handleAddToCartClick }: any) => {
     let params = useParams();
 
     // dataKeys assigned as 'data' keys type
@@ -43,12 +43,14 @@ const Shop = () => {
             return data[key].map((item) => {
                 return (
                     <Card
+                        guitarType={key}
                         id={item.id}
                         key={item.id}
                         name={item.name}
                         price={item.price}
                         image={item.image}
                         description={item.description}
+                        handleAddToCartClick={handleAddToCartClick}
                     />
                 );
             });
