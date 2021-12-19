@@ -7,48 +7,40 @@ import React from 'react';
 
 const Shop = () => {
     let params = useParams();
-    const dataKeys = Object.keys(data);
 
+    // dataKeys assigned as 'data' keys type
+    let dataKeys = Object.keys(data) as Array<keyof typeof data>;
+
+    // empty array of keys purposed to be shown
+    let dataToShow = [] as Array<keyof typeof data>;
+
+    // ternary operator which according to params assigns dataToShow
+    params.shopName === 'electric'
+        ? (dataToShow = ['electric'])
+        : params.shopName === 'bass'
+        ? (dataToShow = ['bass'])
+        : (dataToShow = dataKeys);
+
+    // TODO this one have to be removed
     const handleGuitarTypeClick = (e: React.MouseEvent) => {
         console.log(params);
     };
 
-    const renderGuitars = () => {
-        // dataKeys.map((key: keyof typeof data) => {
-        //     return <h1>{data[key]}</h1>;
-        // });
-
-        return data.electric.map((item) => {
+    const renderLinks = () => {
+        return dataKeys.map((key) => {
             return (
-                <Card
-                    id={item.id}
-                    key={item.id}
-                    name={item.name}
-                    price={item.price}
-                    image={item.image}
-                    description={item.description}
-                />
+                <Link key={key} to={`/shop/${key}`}>
+                    <h2 onClick={handleGuitarTypeClick}>
+                        {capitalizeFirstLetter(key)}
+                    </h2>
+                </Link>
             );
         });
     };
 
-    return (
-        <div className={styles.Shop}>
-            <div>
-                <Link to={`/shop`}>
-                    <h2>All guitars</h2>
-                </Link>
-                {Object.keys(data).map((key) => {
-                    return (
-                        <Link key={key} to={`/shop/${key}`}>
-                            <h2 onClick={handleGuitarTypeClick}>
-                                {capitalizeFirstLetter(key)}
-                            </h2>
-                        </Link>
-                    );
-                })}
-            </div>
-            {/* {data.electric.map((item) => {
+    const renderGuitars = () => {
+        return dataToShow.map((key) => {
+            return data[key].map((item) => {
                 return (
                     <Card
                         id={item.id}
@@ -59,7 +51,18 @@ const Shop = () => {
                         description={item.description}
                     />
                 );
-            })} */}
+            });
+        });
+    };
+
+    return (
+        <div className={styles.Shop}>
+            <div className={styles.Links}>
+                <Link to={`/shop`}>
+                    <h2>All guitars</h2>
+                </Link>
+                {renderLinks()}
+            </div>
             {renderGuitars()}
         </div>
     );

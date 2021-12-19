@@ -1,0 +1,43 @@
+.CartItem {
+    display: flex;
+    flex-direction: row;
+
+    img {
+        width: 50%;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+
+        .quantity {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                font-size: 2rem;
+                padding: 20px;
+                background-color: white;
+                border: none;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &:active {
+                    transform: scale(0.9);
+                }
+            }
+
+            p {
+                padding: 20px;
+                border: 2px solid black;
+                border-radius: 5px;
+            }
+        }
+    }
+}

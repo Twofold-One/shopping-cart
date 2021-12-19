@@ -1,0 +1,43 @@
+@use '../../global_styles/color';
+
+.Cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    h1 {
+        text-shadow: 0 0 10px color.$primary-light;
+    }
+
+    .total {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            margin: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        button {
+            width: 100%;
+            padding: 20px;
+            margin: 10px;
+            background-color: color.$primary;
+            color: white;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            &:hover {
+                cursor: pointer;
+                text-shadow: 0 0 10px color.$secondary;
+            }
+        }
+    }
+}
