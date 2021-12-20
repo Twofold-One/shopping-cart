@@ -11,7 +11,7 @@ const Card = ({
     description,
     handleAddToCartClick,
 }: CardProps) => {
-    // todo
+    // todo, maybe make it as a tooltip
     const onDescriptionClick = () => {
         return <Description />;
     };

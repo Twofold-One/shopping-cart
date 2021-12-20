@@ -28,12 +28,13 @@
         a {
             width: 100%;
             display: flex;
+            margin: 10px 0;
         }
 
         button {
             width: 100%;
             padding: 20px;
-            margin: 10px;
+            // margin: 10px;
             background-color: color.$primary;
             color: white;
             font-size: 1.5rem;
