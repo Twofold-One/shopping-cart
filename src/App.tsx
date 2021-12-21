@@ -66,7 +66,7 @@ const App = () => {
 
     return (
         <div className="App">
-            <Header />
+            <Header guitarCart={guitarCart} />
             <div className="Main">
                 <Routes>
                     <Route path="/" element={<Home />} />

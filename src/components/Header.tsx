@@ -1,8 +1,26 @@
 import { Link } from 'react-router-dom';
 import styles from './styles/Header.module.scss';
 import { BsCart4 } from 'react-icons/bs';
+import { useEffect } from 'react';
 
-const Header = () => {
+const Header = ({ guitarCart }: any) => {
+    const renderCounter = () => {
+        return (
+            <span
+                className={`${styles.counter} ${
+                    guitarCart.length > 0 ? styles.show : ''
+                }`}
+            >
+                {guitarCart.length}
+            </span>
+        );
+    };
+
+    useEffect(() => {
+        console.log(guitarCart.length);
+        return () => {};
+    }, [guitarCart]);
+
     return (
         <div className={styles.Header}>
             <h1>
@@ -18,7 +36,10 @@ const Header = () => {
                     </Link>
                     <Link to="/cart">
                         <li>
-                            <BsCart4 className={styles.cart} />
+                            <div className={styles.cart}>
+                                <BsCart4 className={styles.icon} />
+                                {renderCounter()}
+                            </div>
                         </li>
                     </Link>
                 </ul>
