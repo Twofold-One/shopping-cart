@@ -4,7 +4,12 @@ import { Link } from 'react-router-dom';
 import { countObjects } from '../utility_functions/cout_objects_in_array';
 import { totalPrice } from '../utility_functions/count_total_price';
 
-const Cart = ({ guitarCart }: any) => {
+const Cart = ({
+    guitarCart,
+    handleIncrementClick,
+    handleDecrementClick,
+    handleInputChange,
+}: any) => {
     // What does it all for?
     // In guitar cart object may repeat, so Set is used to avoid
     // repetition. But Set does not have 'map' method and
@@ -23,6 +28,9 @@ const Cart = ({ guitarCart }: any) => {
                         image={guitar.image}
                         description={guitar.description}
                         quantity={countObjects(guitarCart, guitar.name)}
+                        handleIncrementClick={handleIncrementClick}
+                        handleDecrementClick={handleDecrementClick}
+                        handleInputChange={handleInputChange}
                     />
                 </div>
             );

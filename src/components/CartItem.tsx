@@ -3,17 +3,31 @@ import { AiOutlinePlus } from 'react-icons/ai';
 import { AiOutlineMinus } from 'react-icons/ai';
 import styles from './styles/CartItem.module.scss';
 
-const CartItem = ({ id, name, price, image, description, quantity }: any) => {
-    const handleInputChange = () => {};
+const CartItem = ({
+    id,
+    name,
+    price,
+    image,
+    description,
+    quantity,
+    handleIncrementClick,
+    handleDecrementClick,
+    handleInputChange,
+}: any) => {
+    const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const value = e.target.value;
+        const name = e.target.dataset.name;
+        console.log(name, value);
+        handleInputChange(name, value);
+    };
 
-    // todo increment and decrement functionality
     const onIncrementButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         const name = e.currentTarget.dataset.name;
-        console.log(name);
+        handleIncrementClick(name);
     };
     const onDecrementButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         const name = e.currentTarget.dataset.name;
-        console.log(name);
+        handleDecrementClick(name);
     };
 
     return (
@@ -27,9 +41,10 @@ const CartItem = ({ id, name, price, image, description, quantity }: any) => {
                         <AiOutlineMinus />
                     </button>
                     <input
-                        type="text"
+                        type="number"
                         value={quantity}
-                        onChange={handleInputChange}
+                        data-name={name}
+                        onChange={onInputChange}
                     ></input>
                     <button data-name={name} onClick={onIncrementButtonClick}>
                         <AiOutlinePlus />

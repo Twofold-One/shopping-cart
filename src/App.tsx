@@ -7,17 +7,18 @@ import Home from './pages/Home';
 import Shop from './pages/Shop';
 import Cart from './pages/Cart';
 import { data } from './data/guitars_data';
+import { findObject } from './utility_functions/find_obj_in_array';
+
+// TODO
+// 1. Create an icon near cart icon which will show total amount of guitars.
+// 2. Make a checkout page with price (optional).
+// 3. Make the animations of pages.
+// 4. Make a description tooltip or other option on description hover.
+// 5. Hardcode acoustic guitars to data.
+// 6. Last but not least: make the app responsive.
 
 const App = () => {
-    const [guitarCart, setGuitarCart] = useState<Array<any>>([
-        {
-            id: 5,
-            name: 'Dean Dimebag ML',
-            price: 925,
-            image: 'https://d1aeri3ty3izns.cloudfront.net/media/43/435510/1200/preview.jpg',
-            description: `Feel its power. The Dean Dimebag ML is a true head turner. Featuring the iconic Dime from Hell design, it is guaranteed to make an impression onstage, and in your bedroom, and in your kitchen, and wherever else you take it. Two powerful humbuckers in the form of a Seymour Duncan Dimebucker and DMT Design ensure you get the same power and crunch that Dimebag Darrell himself enjoyed. And a set-in mahogany neck with a 'V' profile provides unstoppable playability and comfort, so you can shred without restriction. It's time to embrace your inner Dimebag and slay.`,
-        },
-    ]);
+    const [guitarCart, setGuitarCart] = useState<Array<any>>([]);
 
     useEffect(() => {
         console.log(guitarCart);
@@ -32,12 +33,36 @@ const App = () => {
         const newGuitar = data[guitartype][id];
         setGuitarCart([...prevGuitarCart, newGuitar]);
     };
-    // State
 
-    // 1. guitar cart items added
-    // 2. quantity of particular item
-    // 3. total price of particular item
-    // 4. total price
+    const handleIncrementClick = (name: string) => {
+        const prevGuitarCart = guitarCart.slice();
+        const guitarToAdd = findObject(name, guitarCart);
+        setGuitarCart([...prevGuitarCart, guitarToAdd]);
+    };
+
+    const handleDecrementClick = (name: string) => {
+        const prevGuitarCart = guitarCart.slice();
+        const guitarToDelete = findObject(name, guitarCart);
+        const indexOfGuitarToDelete = prevGuitarCart.indexOf(guitarToDelete);
+        prevGuitarCart.splice(indexOfGuitarToDelete, 1);
+        setGuitarCart([...prevGuitarCart]);
+    };
+
+    const handleInputChange = (name: string, value: string) => {
+        const prevGuitarCart = guitarCart.slice();
+        const amount = Number(value);
+        const guitarToAdd = findObject(name, guitarCart);
+        const indexOfGuitar = prevGuitarCart.indexOf(guitarToAdd);
+        const filteredGuitarCart = prevGuitarCart.filter(
+            (item) => item.name !== name
+        );
+        let guitarsToAdd = [];
+        for (let i = 0; i < amount; i++) {
+            guitarsToAdd.push(guitarToAdd);
+        }
+        filteredGuitarCart.splice(indexOfGuitar, 0, ...guitarsToAdd);
+        setGuitarCart([...filteredGuitarCart]);
+    };
 
     return (
         <div className="App">
@@ -62,7 +87,14 @@ const App = () => {
                     </Route>
                     <Route
                         path="/cart"
-                        element={<Cart guitarCart={guitarCart} />}
+                        element={
+                            <Cart
+                                guitarCart={guitarCart}
+                                handleIncrementClick={handleIncrementClick}
+                                handleDecrementClick={handleDecrementClick}
+                                handleInputChange={handleInputChange}
+                            />
+                        }
                     />
                 </Routes>
             </div>
