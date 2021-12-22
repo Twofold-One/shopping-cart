@@ -19,6 +19,8 @@ const Shop = ({ handleAddToCartClick }: any) => {
         ? (dataToShow = ['electric'])
         : params.shopName === 'bass'
         ? (dataToShow = ['bass'])
+        : params.shopName === 'acoustic'
+        ? (dataToShow = ['acoustic'])
         : (dataToShow = dataKeys);
 
     // TODO this one have to be removed

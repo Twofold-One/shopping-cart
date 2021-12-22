@@ -110,5 +110,88 @@ export const data = {
             description: `Sound and feel. The two attributes you must prioritise when searching for a great bass guitar. To perform at your best and give your music the greatest possible bass sound, you need an instrument with immense playability and fantastic tone. That's exactly what you get in the Warwick GPS Streamer LX Bass. It truly is the pinnacle of performance.
             Because of its sleek ovangkol neck, you'll be able to fly up and down the bass' scale at speed. Perfect for blistering basslines. You'll enjoy a superb tonal range that can give you any sound you desire. Active MEC P/J pickups give you an amazing, far-reaching array of tones to inject into your music. This is everything you've ever wanted in a bass guitar.`,
         },
+        {
+            id: 6,
+            name: 'PRS Gary Grainger V String Bass',
+            price: 6450,
+            image: 'https://d1aeri3ty3izns.cloudfront.net/media/72/724052/1200/preview.jpg',
+            description: `The PRS Gary Grainger V String Bass provides an excellent tone for both soloing and adding groove to a band. Its custom GG5 pickups produce tonnes of clarity and low-end bounce while you perform. It also comes with a 3-band EQ, which lets you shape your sound, so it is sonically flexible enough to accommodate a wide variety of genres and styles, especially blues, rock, and jazz.
+            Alongside the EQ is a bridge pickup volume and a neck pickup volume. These allow you to adjust the level of your pickups to achieve a multitude of different tones. You can also add a high-end sparkle to you sound, as the neck features twenty-four frets for two octaves of tonal goodness. Perform like Gary Grainger thanks to PRS.`,
+        },
+        {
+            id: 7,
+            name: 'Schecter C-5 Silver Mountain',
+            price: 1735,
+            image: 'https://d1aeri3ty3izns.cloudfront.net/media/68/686353/1200/preview.jpg',
+            description: `The Schecter C-5 Silver Mountain is here to cause a storm. Rip up the stage, deliver every note like fireballs from the strings, and become submerged in a sublime, unforgettable playing experience. When you're armed with two Fishman Fluence Bass Soapbar pickups, a 2-band EQ, and a 3-way toggle voicing switch, anything is possible. Sculpt your sound with the power of a god and the precision of an artist. The control is completely in your hands.
+            Whatever your style, the C-4 Silver Mountain will meet your every demand. Go from classic bass sounds to funk to modern in the blink of an eye whilst a sumptuously smooth ebony fretboard grants you seamless playability. Exquisite design does not go amiss on this bass. And you'll be granted the striking aesthetic of a mahogany body adorned with a fierce Toxic Venom finish and sleek, robust hardware for a lifetime of exhilarating playing.`,
+        },
+    ],
+    acoustic: [
+        {
+            id: 0,
+            name: 'Martin D-35 Johnny Cash',
+            price: 6675,
+            image: 'https://d1aeri3ty3izns.cloudfront.net/media/62/624755/1200/preview.jpg',
+            description: `Play with a wealth of history behind you. The Martin D-35 Johnny Cash is a dark, striking, and tonally exquisite model that pays tribute to the legend himself. The D-35 was favoured by Johnny Cash; its shimmering trebles and rich lows made up that wonderfully clear and twangy sound he is known for. Experience the same tone with this guitar courtesy of a gorgeous spruce top, resonant rosewood back and sides, and a sublime ebony fretboard. The combination of these three meticulously chosen tonewoods results in a sound that sparkles across the whole frequency range.
+            It's not enough to have just three glorious tonewoods, a reliable guitar must be robust enough to endure every gig, thriving performance after performance. Mounted inside the body of the Martin D-35 Johnny Cash is scalloped, forward-shifted X-bracing, providing incredible stability and tonal resonance. The ebony fretboard is also wonderfully durable; play and play without the worry of it wearing away, it can handle the frequent attack of your skilful fretting. The Martin D-35 Johnny Cash is a stunning guitar in both looks and sound… a truly magnificent, long-lasting investment.`,
+        },
+        {
+            id: 1,
+            name: 'Ortega JRSM-COS Javier Reyes 8-String Electro Nylon',
+            price: 6830,
+            image: 'https://d1aeri3ty3izns.cloudfront.net/media/37/373505/1200/preview.jpg',
+            description: `The Ortega JRSM-COS Javier Reyes 8-String Electro Nylon is designed for dreamy, professional performances, offering an expertly built solid wood construction combined with responsive LR Baggs electronics. A hybrid of both traditional Spanish influences and metal riffing, Javier Reyes's work in Animal as Leaders and Mestis has made him renowned for his innovative 8-string playing. He needs a comfortable classical instrument that has the versatility to master various genres, whilst a wide, sleek neck allows for seamless fretting - this Signature guitar is the very embodiment of such sumptuous playability.
+            Delve into glorious acoustic sound that is powerful even when unplugged. The combination of a solid German spruce top and solid cocobolo back and sides achieves such an incredible feat, promising delicious dynamics, crisp clarity, and gorgeous sustain. And thanks to LR Baggs Element electronics, plugging in and giving your performance a boost is easy; you can count on sparkling, supreme amplification. A road case is also included, ensuring your prized guitar stays in pristine condition.`,
+        },
+        {
+            id: 2,
+            name: 'Taylor Builders Edition K24ce Electro Acoustic',
+            price: 6542,
+            image: 'https://d1aeri3ty3izns.cloudfront.net/media/67/679119/1200/preview.jpg',
+            description: `The Taylor Builder's Edition K24ce Electro Acoustic combines a whole array of premium details with a truly player friendly vibe. It features Taylor's award winning V-Class bracing to bring you more volume, unmatched sustain, and superior intonation while a silent satin finish not only provides a silky-smooth, addictive feel. But an incredibly silent performance too. The clue is in the name. It removes unwanted noise created via your arm movements whilst playing, making this Builder's Edition a superior instrument for recording with.
+            Sonically, this K24ce holds all the classic, distinct characteristics that Hawaiian koa is known for with the ability the open up its tonal character. The overall result - a regal-sounding instrument that offers sonic sweetness and versatility in abundance. All you have to do is keep playing, and you'll be rewarded. Plus, with Taylor's all-purpose body, as well as a double contoured Venetian cutaway, and a contoured armrest, you play with indulgent comfort with the ability to control your technique like never before. Whether you're a professional session musician, heading to the studio, or a dedicated collector, this Builder's Edition has all the design elements every acoustic player craves...`,
+        },
+        {
+            id: 3,
+            name: 'Gibson Dove Original',
+            price: 5206,
+            image: 'https://d1aeri3ty3izns.cloudfront.net/media/53/535450/1200/preview.jpg',
+            description: `Sheer elegance. The Gibson Dove Original showcases Gibson's hallmark quality in every aspect. Featuring the hailed dreadnought body shape, each chord you play will resonate with shimmering clarity and plenty of projection. And, fitted with an LR Baggs preamp, you can plug into your amplifier and perform with plenty of projection on stage. But it's not just about volume. It's about tone. Which is why the Dove features a solid Sitka spruce top, maintaining expert tonal balance and character with every strum. Because, with Gibson, you don't just get great sound. You get a characterful, distinctive voice.
+            Gibson have a rich history of guitar craftsmanship. And it shows. A sleek rosewood fingerboard combines beautifully with the rounded maple neck for a totally effortless performance. Its long scale length leaves a lot for players to explore. So, naturally, Gibson have ensured that the Dove Original is addictive to play. Stylistic touches, including the unique Dove bridge and iconic pickguard, provide a one-of-a-kind, vintage feel to the player. This is a guitar with its own individual personality. And it awaits your creativity to bring it to life.`,
+        },
+        {
+            id: 4,
+            name: 'Taylor T5z Custom',
+            price: 4302,
+            image: 'https://d1aeri3ty3izns.cloudfront.net/media/49/492489/1200/preview.jpg',
+            description: `Want something a little bit special? Well, the Taylor T5z Custom greatly exceeds special. It's in a league of its own when it comes to sound, looks, and feel - and it shows. Gleaming from head to toe with world class features and supreme craftsmanship, it offers a truly magical playing experience. Koa tonewood on the body delivers a powerful, punchy acoustic resonance. A sublime three pickup combination makes the amplified sound of this guitar sing to the stars. You've never heard anything quite like it.
+            It plays beautifully - and easily. Both the sapele neck and ebony fretboard feel exceptional as a combination, offering perfect manoeuvrability. They also create a well-balanced tone which helps your notes hit the sweet spot every time you pluck a string. Your fingers will glide along these smooth surfaces without resistance, and your playing will flow. This is a guitar which screams professionalism, and it feels like a dream to play.`,
+        },
+        {
+            id: 5,
+            name: 'Gibson Slash J-45',
+            price: 3429,
+            image: 'https://d1aeri3ty3izns.cloudfront.net/media/60/605880/1200/preview.jpg',
+            description: `An iconic guitar. Shaped by an iconic player. The Gibson Slash J-45 builds on a legacy of master craftsmanship and virtuosic guitar playing. Celebrated for his unmistakable tone, Slash has gained an army of followers who want to shred with the same speed and precision as the legend himself. Now, you're finally one step closer. This is a must-have piece for anyone who wants to embody the spirit of Guns 'N' Roses, Velvet Revolver, and Slash's Snakepit.
+            A timeless design. Reimagined by Slash. Brought to you by Gibson. The Slash J-45 boasts unmistakable tone that's warm at the low end and sings with crisp highs. Discover pronounced amplification from an LR Baggs pickup. You'll never lose your natural sound. The J-45 resonates with sweet sustain thanks to a Sitka Spruce top and Mahogany body. And with a custom shaped C-profile neck, you'll be playing just like your hero.
+            Gibson have been at the forefront of guitar playing for over 100 years. Their dedication to unrivalled performance has inspired generation of new players, and helped build a legacy for the most respected bands on the planet. With The Slash J-45, it?s your turn to hold the torch.`,
+        },
+        {
+            id: 6,
+            name: 'Takamine TSP178AC Thinline Electro Acoustic',
+            price: 2669,
+            image: 'https://d1aeri3ty3izns.cloudfront.net/media/52/527559/1200/preview.jpg',
+            description: `Eye-catching with an electric feel. Sounds better with age. The Takamine TSP178AC Thinline Electro Acoustic is new for 2019, and brings you an all-new Thinline body. This stunning instrument combines a solid maple construction, its brand new body, and renowned Takamine quality with responsive electronics, and the slimmer feel of an electric. Perform with ease and experience a meticulously detailed Takamine tone.
+            A mixture of a solid maple top, back and sides with a maple neck and an ebony fingerboard gives you a bright, rich, and defined sound with long-lasting sustain. Perfect for a wide variety of genres and techniques, it's time to explore many musical avenues. Furthermore, Takamine's Thinline body has a special ability to control feedback within a live setting. It is also incredibly comfortable to play. Perform like you're playing an electric, and deliver a distinctive, premium acoustic tone.`,
+        },
+        {
+            id: 7,
+            name: 'Seagull Peppino Signature CW Electro Acoustic',
+            price: 2402,
+            image: 'https://d1aeri3ty3izns.cloudfront.net/media/44/445790/1200/preview.jpg',
+            description: `A sound that gets better with age. Elegant to look at with premium playability. The Seagull Peppino Signature CW is designed specifically to meet the needs of Peppino D'Agostino. Explore all solid tonewoods, superb playability, and LR Baggs electronics blended with meticulous attention to detail. It brings a sophisticated look and feel to the acoustic world. Primarily known for his stunning, understated melodies, and explosive rhythms. Peppino is a man that demands a lot from his guitar.
+            If you crave a guitar for almost any musical scenario, this Peppino Signature is certain to deliver. Experience a rich, premium sound with a versatile response. The dreadnought cutaway body delivers a bold, commanding sound whilst optimised bracing adds strength and enhances clarity and resonance. An ideal companion for the passionate performer. Ready for the stage and studio. It's time to experience the sublime sound, look, and feel of the Seagull Peppino Signature model.`,
+        },
     ],
 };
