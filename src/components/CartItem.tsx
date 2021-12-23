@@ -17,7 +17,6 @@ const CartItem = ({
     const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.value;
         const name = e.target.dataset.name;
-        console.log(name, value);
         handleInputChange(name, value);
     };
 

@@ -20,11 +20,6 @@ import { findObject } from './utility_functions/find_obj_in_array';
 const App = () => {
     const [guitarCart, setGuitarCart] = useState<Array<any>>([]);
 
-    useEffect(() => {
-        console.log(guitarCart);
-        return () => {};
-    }, [guitarCart]);
-
     const handleAddToCartClick = (
         guitartype: keyof typeof data,
         id: number

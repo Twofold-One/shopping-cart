@@ -12,8 +12,8 @@ const Card = ({
     description,
     handleAddToCartClick,
 }: CardProps) => {
-    // hint to bind tooltip to dynamic content
     useEffect(() => {
+        // hint to bind tooltip to dynamic content
         ReactTooltip.rebuild();
         return () => {};
     });
@@ -21,7 +21,6 @@ const Card = ({
     const onAddToCartClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         const id = e.currentTarget.id;
         const guitartype = e.currentTarget.dataset.guitartype;
-        console.log(id, guitartype);
         handleAddToCartClick(guitartype, id);
     };
 
@@ -41,7 +40,6 @@ const Card = ({
                 data-tip
                 data-for={`${guitarType} ${String(id)}`}
                 id={String(id)}
-                onClick={() => console.log(description)}
             >
                 DESCRIPTION
             </p>

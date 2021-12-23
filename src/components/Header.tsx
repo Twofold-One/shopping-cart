@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './styles/Header.module.scss';
 import { BsCart4 } from 'react-icons/bs';
-import { useEffect } from 'react';
 
 const Header = ({ guitarCart }: any) => {
     const renderCounter = () => {
@@ -15,11 +14,6 @@ const Header = ({ guitarCart }: any) => {
             </span>
         );
     };
-
-    useEffect(() => {
-        console.log(guitarCart.length);
-        return () => {};
-    }, [guitarCart]);
 
     return (
         <div className={styles.Header}>
