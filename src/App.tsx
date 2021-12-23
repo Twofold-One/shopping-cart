@@ -10,11 +10,11 @@ import { data } from './data/guitars_data';
 import { findObject } from './utility_functions/find_obj_in_array';
 
 // TODO
-// 1. Create an icon near cart icon which will show total amount of guitars.
+// READY 1. Create an icon near cart icon which will show total amount of guitars.
 // 2. Make a checkout page with price (optional).
-// 3. Make the animations of pages.
-// 4. Make a description tooltip or other option on description hover.
-// 5. Hardcode acoustic guitars to data.
+// READY 3. Make the animations of pages.
+// READY 4. Make a description tooltip or other option on description hover.
+// READY 5. Hardcode acoustic guitars to data.
 // 6. Last but not least: make the app responsive.
 
 const App = () => {

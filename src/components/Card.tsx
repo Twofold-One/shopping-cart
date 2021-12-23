@@ -1,6 +1,7 @@
 import styles from './styles/Card.module.scss';
 import { CardProps } from '../interfaces/general';
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactTooltip from 'react-tooltip';
 
 const Card = ({
     guitarType,
@@ -11,10 +12,11 @@ const Card = ({
     description,
     handleAddToCartClick,
 }: CardProps) => {
-    // todo, maybe make it as a tooltip
-    const onDescriptionClick = () => {
-        return <Description />;
-    };
+    // hint to bind tooltip to dynamic content
+    useEffect(() => {
+        ReactTooltip.rebuild();
+        return () => {};
+    });
 
     const onAddToCartClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         const id = e.currentTarget.id;
@@ -35,18 +37,22 @@ const Card = ({
             >
                 ADD TO CART
             </button>
-            <p id={String(id)} onClick={onDescriptionClick}>
+            <p
+                data-tip
+                data-for={`${guitarType} ${String(id)}`}
+                id={String(id)}
+                onClick={() => console.log(description)}
+            >
                 DESCRIPTION
             </p>
-        </div>
-    );
-};
-
-// todo
-const Description = () => {
-    return (
-        <div className={styles.Description}>
-            <h1>description</h1>
+            <ReactTooltip
+                id={`${guitarType} ${String(id)}`}
+                place="top"
+                className={styles.tooltip}
+                effect="solid"
+            >
+                <div>{description}</div>
+            </ReactTooltip>
         </div>
     );
 };

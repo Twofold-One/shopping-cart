@@ -23,18 +23,11 @@ const Shop = ({ handleAddToCartClick }: any) => {
         ? (dataToShow = ['acoustic'])
         : (dataToShow = dataKeys);
 
-    // TODO this one have to be removed
-    const handleGuitarTypeClick = (e: React.MouseEvent) => {
-        console.log(params);
-    };
-
     const renderLinks = () => {
         return dataKeys.map((key) => {
             return (
                 <Link key={key} to={`/shop/${key}`}>
-                    <h2 onClick={handleGuitarTypeClick}>
-                        {capitalizeFirstLetter(key)}
-                    </h2>
+                    <h2>{capitalizeFirstLetter(key)}</h2>
                 </Link>
             );
         });
