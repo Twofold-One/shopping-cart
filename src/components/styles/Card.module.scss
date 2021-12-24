@@ -70,3 +70,9 @@
 .tooltip {
     width: 500px !important;
 }
+
+@media screen and (max-width: 768px) {
+    .tooltip {
+        width: 400px !important;
+    }
+}

@@ -45,3 +45,20 @@
         }
     }
 }
+
+@media screen and (max-width: 380px) {
+    .CartItem {
+        .info {
+            .quantity {
+                button {
+                    font-size: 1.1rem;
+                }
+
+                input {
+                    font-size: 1.1rem;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

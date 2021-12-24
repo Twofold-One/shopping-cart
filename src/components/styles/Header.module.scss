@@ -66,3 +66,23 @@
         display: flex;
     }
 }
+
+@media screen and (max-width: 380px) {
+    .Header {
+        height: 20vh;
+
+        h1 {
+            padding-right: 10px;
+        }
+
+        nav {
+            padding: 10px;
+        }
+
+        ul li {
+            display: block;
+            text-align: center;
+            margin: 10px;
+        }
+    }
+}

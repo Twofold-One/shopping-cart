@@ -70,3 +70,14 @@
         }
     }
 }
+
+@media screen and (max-width: 380px) {
+    .Cart {
+        .total {
+            p,
+            button {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

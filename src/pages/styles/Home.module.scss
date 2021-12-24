@@ -46,4 +46,10 @@
             opacity: 1;
         }
     }
+
+    @media screen and (max-width: 380px) {
+        button {
+            width: 50vw;
+        }
+    }
 }
