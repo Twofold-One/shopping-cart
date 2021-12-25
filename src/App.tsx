@@ -56,9 +56,9 @@ const App = () => {
             <Header guitarCart={guitarCart} />
             <div className="Main">
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/shopping-cart" element={<Home />} />
                     <Route
-                        path="/shop"
+                        path="/shopping-cart/shop"
                         element={
                             <Shop handleAddToCartClick={handleAddToCartClick} />
                         }
@@ -73,7 +73,7 @@ const App = () => {
                         />
                     </Route>
                     <Route
-                        path="/cart"
+                        path="/shopping-cart/cart"
                         element={
                             <Cart
                                 guitarCart={guitarCart}

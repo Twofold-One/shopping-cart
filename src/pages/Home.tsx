@@ -10,7 +10,7 @@ const Home = () => {
                 Gibson, Jackson, Dean, Ibanez, as well as our own great value
                 Guitar Shop music product range.
             </p>
-            <Link to="/shop">
+            <Link to="/shopping-cart/shop">
                 <button>SHOP NOW</button>
             </Link>
         </div>

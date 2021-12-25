@@ -44,7 +44,7 @@ const Cart = ({
             <div className={styles.total}>
                 <p>Total: ${totalPrice(guitarCart)}</p>
                 <button>Checkout</button>
-                <Link to="/shop">
+                <Link to="/shopping-cart/shop">
                     <button className="continue-button">
                         Continue shopping
                     </button>

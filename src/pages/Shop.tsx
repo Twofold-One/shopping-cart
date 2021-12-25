@@ -54,7 +54,7 @@ const Shop = ({ handleAddToCartClick }: any) => {
     return (
         <div className={styles.Shop}>
             <div className={styles.Links}>
-                <Link to={`/shop`}>
+                <Link to={`/shopping-cart/shop`}>
                     <h2>All guitars</h2>
                 </Link>
                 {renderLinks()}
