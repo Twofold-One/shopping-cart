@@ -19,7 +19,7 @@
 
     button {
         padding: 20px;
-        width: 30vw;
+        width: 20vw;
         font-size: 1.5rem;
         font-weight: bold;
         // background-color: color.$secondary-light;
@@ -46,8 +46,18 @@
             opacity: 1;
         }
     }
+}
 
-    @media screen and (max-width: 380px) {
+@media screen and (max-width: 895px) {
+    .Home {
+        button {
+            width: 40vw;
+        }
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .Home {
         button {
             width: 50vw;
         }

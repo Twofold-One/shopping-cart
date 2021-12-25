@@ -16,14 +16,6 @@ body,
     min-height: 100vh;
 }
 
-@media screen and (max-width: 380px) {
-    html,
-    body,
-    .App {
-        font-size: 1rem;
-    }
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
@@ -52,4 +44,12 @@ img {
 
 .Main {
     flex: 1 0 auto;
+}
+
+@media screen and (max-width: 560px) {
+    html,
+    body,
+    .App {
+        font-size: 1rem;
+    }
 }

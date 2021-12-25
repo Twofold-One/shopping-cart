@@ -3,7 +3,6 @@ import { data } from '../data/guitars_data';
 import Card from '../components/Card';
 import { Link, useParams } from 'react-router-dom';
 import { capitalizeFirstLetter } from '../utility_functions/capitalize_first_letter';
-import React from 'react';
 
 const Shop = ({ handleAddToCartClick }: any) => {
     let params = useParams();

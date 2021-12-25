@@ -76,3 +76,9 @@
         width: 400px !important;
     }
 }
+
+@media screen and (max-width: 655px) {
+    .tooltip {
+        width: 300px !important;
+    }
+}

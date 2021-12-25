@@ -67,7 +67,31 @@
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 680px) {
+    .Header {
+        padding: 40px;
+        h1 {
+            margin: 0 auto;
+        }
+
+        ul li {
+            display: block;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .cart {
+            font-size: 1.8rem;
+        }
+
+        .counter {
+            right: 20px;
+            bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
     .Header {
         height: 20vh;
 
@@ -78,11 +102,9 @@
         nav {
             padding: 10px;
         }
-
-        ul li {
-            display: block;
-            text-align: center;
-            margin: 10px;
+        .counter {
+            right: 18px;
+            bottom: 0;
         }
     }
 }
