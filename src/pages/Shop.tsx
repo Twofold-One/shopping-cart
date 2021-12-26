@@ -25,7 +25,7 @@ const Shop = ({ handleAddToCartClick }: any) => {
     const renderLinks = () => {
         return dataKeys.map((key) => {
             return (
-                <Link key={key} to={`/shop/${key}`}>
+                <Link key={key} to={`/shopping-cart/shop/${key}`}>
                     <h2>{capitalizeFirstLetter(key)}</h2>
                 </Link>
             );
