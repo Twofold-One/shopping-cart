@@ -4,7 +4,7 @@ Fake Guitar Shop App where you could view guitars, filter them by type, add 'em 
 
 [Live app](https://twofold-one.github.io/shopping-cart/)
 
-![guitar-shop](https://user-images.githubusercontent.com/87330747/147396420-d1f70946-4541-4915-9540-860269dc66d9.gif)
+<img src="https://user-images.githubusercontent.com/87330747/147396420-d1f70946-4541-4915-9540-860269dc66d9.gif" width="500">
 
 ### Get started
 
